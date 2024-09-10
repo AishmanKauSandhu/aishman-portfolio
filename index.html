@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Aish</span> Sandhu.<br>I’m passionate about turning<br> creative ideas into functional <br>web experiences.</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated web developer with a strong foundation in computer information systems, specializing in creating visually captivating and user-friendly web experiences. Proficient in WordPress, HTML, CSS, JavaScript, and advanced CSS techniques, I focus on crafting responsive, intuitive websites while implementing best practices in web development and security.
+
+                    <br> <br> With hands-on experience developing secure login systems, account management features, and cross-browser-compatible web applications, I deliver efficient and secure solutions. From working on freelance projects like MyDigiScope and HopeRoadChildren to excelling in customer service roles, I’ve honed problem-solving, attention to detail, and creativity. Whether improving user engagement or managing databases, my goal is always to ensure seamless functionality and enjoyable web experiences.
+                    
+                    <br><br> Outside of coding, I explore new design trends, stay updated on advancements in cybersecurity, and assist customers in finding practical solutions. Let’s build something amazing together!
+                    
+                    </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>WordPress, HTML, CSS, JavaScript</li>
+                        <li><span>Advanced CSS</span><br>Grid, animations, responsiveness</li>
+                        <li><span>Web Application Development</span><br>Secure login, account management</li>
+                        <li><span>Database Management</span><br>SQL, database design</li>
+                        <li><span>Cybersecurity Principles</span><br>Implement security measures to protect web applications from threats</li>
+                        <li><span>Creativity & Attention to Detail</span><br>Design engaging, precise, and functional web experiences</li>
+                        <li><span>Time Management</span><br>Prioritize tasks to deliver projects on time without sacrificing quality</li>
+                        <li><span>Customer Service</span><br>Provide excellent support, ensuring client satisfaction</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>July 2022 – Present</span><br>Order Management Design Tech / Customer Service Representative – The Home Depot</li>
+                        <li><span>March 2024</span><br>Web Designer (Freelance) – MyDigiScope</li>
+                        <li><span>In Progress</span><br>Web Designer (Freelance) – HopeRoadChildren</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>April 2024</span><br>Diploma in Computer Information Systems – Kwantlen Polytechnic University</li>
+                        <li><span>July 2024</span><br>CompTIA IT Fundamentals+ (ITF+) - CompTIA (comptia.org)                                                                 </li>
+                        <li><span>2023</span><br>Cutting-edge CSS (LinkedIn Learning)</li>
+                        <li><span>2023</span><br>UX Foundations: Interaction Design (LinkedIn Learning) </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="expertise">
+    <div class="container">
+        <h1 class="sub-title">Expertise</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Custom Website Design<br>
+                    Responsive Design for Mobile and Desktop<br>
+                    User Experience (UX) Design<br>
+                    UI Design and Branding</p>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Web Development</h2>
+                <p>WordPress Development<br>
+                    Front-End Development (HTML, CSS, JavaScript)<br>
+                    Back-End Development and Database Integration<br>
+                    Web Application Development</p>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Consultation and Strategy</h2>
+                <p>Project Consultation and Planning<br>
+                    Design and Development Strategy<br>
+                    UX and UI Strategy<br>
+                    Market Research and Analysis
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>MYDIGISCOPE</h3>
+                    <p>Showcases a digital stethoscope that transmits heartbeat and breathing sounds wirelessly for remote medical and veterinary use.</p>
+                    <a href="https://mydigiscopes.com" target="_blank">Explore</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>HOPEROADCHILDREN</h3>
+                    <p>Focuses on enhancing children's mental and emotional well-being through tailored, compassionate support.</p>
+                    <a href="https://hoperoadchildren.com" target="_blank">Explore</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Realtor Desktop App</h3>
+                    <p>A desktop app for real estate professionals to efficiently find and manage property listing</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> akaursandhu548@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>(236) 869-2757</p>
+                
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made<i class="fas fa-heart"></i> by <a href="https://www.linkedin.com/in/sandhu-aishman/" target="_blank">Aishman K Sandhu</a></p>
+
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbybKTSnfniJhOdJjlaryJech0dNIpyfhmp7nSD9fqXAWL44EG-xeTbkNnvGcav_sN6_/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
